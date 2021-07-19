@@ -41,4 +41,13 @@ public class UrlCheckController {
         }
         return returnMessage;
     }
+
+    @GetMapping("/healthcheck")
+    public String getHealthCheckMsg()
+    {
+        String returnMessage = "I am alive";
+
+       
+        return returnMessage;
+    }
 }
